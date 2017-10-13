@@ -1,6 +1,7 @@
 /*jslint node: true, for */
 
 var gulp = require('gulp'),
+    babel = require('gulp-babel'),
     del = require('del'),
     sass = require('gulp-sass'),
     sassLinter = require('gulp-sass-lint'),
@@ -117,6 +118,7 @@ gulp.task('compileJSForDev', function () {
     'use strict';
 
     return gulp.src('dev/scripts/*.js')
+        .pipe(babel())
         .pipe(gulp.dest('temp/scripts'));
 });
 
@@ -124,6 +126,7 @@ gulp.task('compileJSForProd', function () {
     'use strict';
 
     return gulp.src('dev/scripts/*.js')
+        .pipe(babel())
         .pipe(jsCompressor())
         .pipe(gulp.dest('./scripts'));
 });
@@ -132,6 +135,7 @@ gulp.task('lintJS', function () {
     'use strict';
 
     return gulp.src('dev/scripts/*.js')
+        .pipe(babel())
         .pipe(jsLinter({
             rules: {
                 indent: [2, 4, {SwitchCase: 1}],
