@@ -1,11 +1,3 @@
-@mixin transition($property: all, $duration: 1s,
-   $timing_function: ease-out, $delay: 0s) {
-  -webkit-transition: $property $duration $timing_function $delay;
-     -moz-transition: $property $duration $timing_function $delay;
-       -o-transition: $property $duration $timing_function $delay;
-          transition: $property $duration $timing_function $delay;
-}
-
 @mixin image-2x($image) {
   @media (-webkit-min-device-pixel-ratio: 1.3),
             (min--moz-device-pixel-ratio: 1.3),
