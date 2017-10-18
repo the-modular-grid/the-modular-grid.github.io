@@ -1,22 +1,22 @@
 // =============================================================================
 // Font Sizes and Leading
 // =============================================================================
-$font-size-base        : 16px;
+$font-size-base     : 16px;
 
 // =============================================================================
 // Grid Sizes
 // =============================================================================
-$grid--column-width: 60px;                        // 60px
-$grid--gutter-width: $grid--column-width / 3;     // 20px
-$grid--unit:         $grid--gutter-width / 2;     // 80px
-$grid--leading:      20px;                        // 20px
+$grid--column-width : 60px;                        // 60px
+$grid--gutter-width : $grid--column-width / 3;     // 20px
+$grid--unit         : $grid--gutter-width / 2;     // 80px
+$grid--leading      : 20px;                        // 20px
 
 // =============================================================================
 // Responsive Breakpoints
 // =============================================================================
-$width-small  : 400px;
-$width-medium : 840px;
-$width-large  : 1280px;
+$width-small        : 400px;
+$width-medium       : 840px;
+$width-large        : 1280px;
 
 // =============================================================================
 // Project-Specific Variables
