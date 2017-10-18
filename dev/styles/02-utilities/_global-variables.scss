@@ -7,8 +7,8 @@ $font-size-base     : 16px;
 // Grid Sizes
 // =============================================================================
 $grid--column-width : 60px;
-$grid--gutter-width : $grid--column-width / 3;     // 20px
-$grid--unit         : $grid--column-width + $grid--gutter-width;     // 80px
+$grid--gutter-width : ($grid--column-width / 3);     // 20px
+$grid--unit         : ($grid--column-width + $grid--gutter-width);     // 80px
 $grid--leading      : 20px;
 
 // =============================================================================
