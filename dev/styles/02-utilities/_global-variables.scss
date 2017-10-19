@@ -3,9 +3,10 @@
 ////
 
 ///
-/// Font Sizes
+/// The base font size, which should translate to 16 pixels via the root
+/// em size.
 ///
-$font-size--base: 1rem; // 16px
+$font-size--base: 1rem;
 
 ///
 /// Grid Sizes
