@@ -38,3 +38,8 @@
    }
 }
 
+@mixin desktop-based-css {
+   @media (min-width: #{$width--tablet-breakpoint}) and (max-width: #{$width--desktop-breakpoint - 1}) {
+      @content;
+   }
+}
