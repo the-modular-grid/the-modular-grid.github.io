@@ -1,0 +1,69 @@
+////
+/// Add poster comment here
+////
+.layout-block {
+   margin: auto;
+
+   &.header {
+   }
+
+   &.main {
+   }
+
+   &.footer {
+   }
+}
+
+.header {
+   &__container {
+      @include phone-based-css {
+         max-width: $width--phone-breakpoint;
+      }
+
+      @include tablet-based-css {
+         width: $width--phone-breakpoint;
+      }
+
+      @include desktop-based-css {
+         max-width: $width--tablet-breakpoint;
+      }
+
+      margin: auto;
+   }
+}
+
+.main{
+   &__container {
+      @include phone-based-css {
+         max-width: $width--phone-breakpoint;
+      }
+
+      @include tablet-based-css {
+         width: $width--phone-breakpoint;
+      }
+
+      @include desktop-based-css {
+         max-width: $width--tablet-breakpoint;
+      }
+
+      margin: auto;
+   }
+}
+
+.footer {
+   &__container {
+      @include phone-based-css {
+         max-width: $width--phone-breakpoint;
+      }
+
+      @include tablet-based-css {
+         width: $width--phone-breakpoint;
+      }
+
+      @include desktop-based-css {
+         max-width: $width--tablet-breakpoint;
+      }
+
+      margin: auto;
+   }
+}
