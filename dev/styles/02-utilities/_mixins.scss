@@ -20,3 +20,21 @@
    }
 }
 
+///
+/// Set the bounds of a tablet between <code>$width--phone-breakpoint</code>
+/// (400 pixels) and <code>$width--tablet-breakpoint - 1</code> (720px).
+///
+/// @access public
+/// @author Roy Vanegas
+///
+/// @example
+///    @include tablet-based-css {
+///       width: $width--phone-breakpoint;
+///    }
+///
+@mixin tablet-based-css {
+   @media (min-width: #{$width--phone-breakpoint}) and (max-width: #{$width--tablet-breakpoint - 1}) {
+      @content;
+   }
+}
+
