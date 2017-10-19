@@ -1,19 +1,23 @@
-// =============================================================================
-// Font Sizes
-// =============================================================================
+////
+/// Site-wide global variables.
+////
+
+///
+/// Font Sizes
+///
 $font-size--base: 1rem; // 16px
 
-// =============================================================================
-// Grid Sizes
-// =============================================================================
+///
+/// Grid Sizes
+///
 $grid--column-width: 60px;
 $grid--gutter-width: ($grid--column-width / 3);                   // 20px
 $grid--unit:         ($grid--column-width + $grid--gutter-width); // 80px
 $grid--leading:      20px;
 
-// =============================================================================
-// Responsive Breakpoints
-// =============================================================================
+///
+/// Responsive Breakpoints
+///
 $width--phone-breakpoint:   (5 * $grid--unit);  // 400px
 $width--tablet-breakpoint:  (9 * $grid--unit);  // 720px
 $width--desktop-breakpoint: (12 * $grid--unit); // 960px
