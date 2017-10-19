@@ -23,7 +23,11 @@ $grid--gutter-width: ($grid--column-width / 3);
 /// unit is 80 pixels.
 ///
 $grid--unit: ($grid--column-width + $grid--gutter-width);
-$grid--leading:      20px;
+
+///
+/// Set the leading of the grid to the line-height of the Muli font — 22 pixels.
+///
+$grid--leading: 22px;
 
 ///
 /// Responsive Breakpoints
