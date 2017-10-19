@@ -30,8 +30,16 @@ $grid--unit: ($grid--column-width + $grid--gutter-width);
 $grid--leading: 22px;
 
 ///
-/// Responsive Breakpoints
+/// The phone breakpoint is 5 grid units, or 400 pixels.
 ///
-$width--phone-breakpoint:   (5 * $grid--unit);  // 400px
-$width--tablet-breakpoint:  (9 * $grid--unit);  // 720px
-$width--desktop-breakpoint: (12 * $grid--unit); // 960px
+$width--phone-breakpoint:   (5 * $grid--unit);
+
+///
+/// The tablet breakpoint is 9 grid units, or 720 pixels.
+///
+$width--tablet-breakpoint:  (9 * $grid--unit);
+
+///
+/// The desktop breakpoint is 12 grid units, or 960 pixels.
+///
+$width--desktop-breakpoint: (12 * $grid--unit);
