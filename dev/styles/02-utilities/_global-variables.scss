@@ -17,7 +17,12 @@ $grid--column-width: 60px;
 /// The width of a single gutter, which is a third of a column, or 20 pixels.
 ///
 $grid--gutter-width: ($grid--column-width / 3);
-$grid--unit:         ($grid--column-width + $grid--gutter-width); // 80px
+
+///
+/// A grid unit is the addition of a column and a gutter. In this case, a grid
+/// unit is 80 pixels.
+///
+$grid--unit: ($grid--column-width + $grid--gutter-width);
 $grid--leading:      20px;
 
 ///
