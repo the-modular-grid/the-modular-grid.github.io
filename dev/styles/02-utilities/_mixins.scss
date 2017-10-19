@@ -3,8 +3,8 @@
 ////
 
 ///
-/// Use <code>$width--phone-breakpoint</code>, which is 400 pixels, minus one
-/// pixel as the phone breakpoint.
+/// Use <code>$width--phone-breakpoint - 1</code> (399px) as the maximum width
+/// breakpoint for the phone.
 ///
 /// @access public
 /// @author Roy Vanegas
