@@ -14,7 +14,7 @@ $font-size--base: 1rem;
 $grid--column-width: 60px;
 
 ///
-/// The width of a single gutter, which is 20 pixels, or a third of a column.
+/// The width of a single gutter, which is a third of a column, or 20 pixels.
 ///
 $grid--gutter-width: ($grid--column-width / 3);
 $grid--unit:         ($grid--column-width + $grid--gutter-width); // 80px
