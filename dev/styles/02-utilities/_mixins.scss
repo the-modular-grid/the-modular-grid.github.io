@@ -2,3 +2,21 @@
 /// Site-wide mixins are contained in this file.
 ////
 
+///
+/// Use <code>$width--phone-breakpoint</code>, which is 400 pixels, minus one
+/// pixel as the phone breakpoint.
+///
+/// @access public
+/// @author Roy Vanegas
+///
+/// @example
+///    @include phone-based-css {
+///       max-width: $width--phone-breakpoint;
+///    }
+///
+@mixin phone-based-css {
+   @media (max-width: #{$width--phone-breakpoint - 1}) {
+      @content;
+   }
+}
+
