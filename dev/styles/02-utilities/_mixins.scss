@@ -38,6 +38,18 @@
    }
 }
 
+///
+/// Set the bounds of the desktop between <code>$width--table-breakpoint</code>
+/// (720 pixels) and <code>$width--desktop-breakpoint - 1</code> (959px).
+///
+/// @access public
+/// @author Roy Vanegas
+///
+/// @example
+///    @include desktop-based-css {
+///       width: $width--tablet-breakpoint;
+///    }
+///
 @mixin desktop-based-css {
    @media (min-width: #{$width--tablet-breakpoint}) and (max-width: #{$width--desktop-breakpoint - 1}) {
       @content;
