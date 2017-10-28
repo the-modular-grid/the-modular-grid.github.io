@@ -25,14 +25,15 @@
       }
 
       @include desktop-based-css {
-         max-width: $width--tablet-breakpoint;
+         width: $width--tablet-breakpoint;
       }
 
       margin: auto;
+      max-width: $width--desktop-breakpoint;
    }
 }
 
-.main{
+.main {
    &__container {
       @include phone-based-css {
          max-width: $width--phone-breakpoint;
@@ -43,10 +44,11 @@
       }
 
       @include desktop-based-css {
-         max-width: $width--tablet-breakpoint;
+         width: $width--tablet-breakpoint;
       }
 
       margin: auto;
+      max-width: $width--desktop-breakpoint;
    }
 }
 
@@ -61,9 +63,10 @@
       }
 
       @include desktop-based-css {
-         max-width: $width--tablet-breakpoint;
+         width: $width--tablet-breakpoint;
       }
 
       margin: auto;
+      max-width: $width--desktop-breakpoint;
    }
 }
