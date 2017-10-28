@@ -3,8 +3,7 @@
 ////
 
 ///
-/// Use <code>$width--phone-breakpoint - 1</code> (399px) as the maximum width
-/// breakpoint for the phone.
+/// Use <code>419px</code> as the maximum width breakpoint for the phone.
 ///
 /// @access public
 /// @author Roy Vanegas
@@ -15,14 +14,13 @@
 ///    }
 ///
 @mixin phone-based-css {
-   @media (max-width: #{$width--phone-breakpoint - 1}) {
+   @media (max-width: #{($width--phone-breakpoint + ($grid--gutter-width)) - 1}) {
       @content;
    }
 }
 
 ///
-/// Set the bounds of a tablet between <code>$width--phone-breakpoint</code>
-/// (400 pixels) and <code>$width--tablet-breakpoint - 1</code> (720px).
+/// Set the bounds of a tablet between <code>420px</code> and <code>739px</code>.
 ///
 /// @access public
 /// @author Roy Vanegas
@@ -33,14 +31,13 @@
 ///    }
 ///
 @mixin tablet-based-css {
-   @media (min-width: #{$width--phone-breakpoint}) and (max-width: #{$width--tablet-breakpoint - 1}) {
+   @media (min-width: #{($width--phone-breakpoint) + ($grid--gutter-width)}) and (max-width: #{($width--tablet-breakpoint + ($grid--gutter-width)) - 1}) {
       @content;
    }
 }
 
 ///
-/// Set the bounds of the desktop between <code>$width--table-breakpoint</code>
-/// (720 pixels) and <code>$width--desktop-breakpoint - 1</code> (959px).
+/// Set the bounds of the desktop between <code>740px</code> and <code>979px</code>.
 ///
 /// @access public
 /// @author Roy Vanegas
@@ -51,7 +48,7 @@
 ///    }
 ///
 @mixin desktop-based-css {
-   @media (min-width: #{$width--tablet-breakpoint}) and (max-width: #{$width--desktop-breakpoint - 1}) {
+   @media (min-width: #{($width--tablet-breakpoint + ($grid--gutter-width))}) and (max-width: #{($width--desktop-breakpoint + ($grid--gutter-width)) - 1}) {
       @content;
    }
 }
