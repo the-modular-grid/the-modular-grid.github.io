@@ -9,6 +9,26 @@
 $font-size--base: 1rem;
 
 ///
+/// The weight 300 maps to light in the Muli font.
+///
+$font-weight--light: 300;
+
+///
+/// The weight 700 maps to bold, which is common, in the Muli font.
+///
+$font-weight--bold: 700;
+
+///
+/// Use a slightly lighter than black color for the font color base.
+///
+$font-color--base: #222;
+
+///
+/// The prime, or main, font families used for display and reading text.
+///
+$font-families--prime: 'Muli', sans-serif;
+
+///
 /// The width of a single column, sans gutter.
 ///
 $grid--column-width: 60px;
