@@ -1,27 +1,45 @@
-// =============================================================================
-// Font Sizes and Leading
-// =============================================================================
-$font-size-base        : 16px;
+////
+/// Site-wide global variables.
+////
 
-// =============================================================================
-// Grid Sizes
-// =============================================================================
-$grid--column-width: 60px;                        // 60px
-$grid--gutter-width: $grid--column-width / 3;     // 20px
-$grid--unit:         $grid--gutter-width / 2;     // 80px
-$grid--leading:      20px;                        // 20px
+///
+/// The base font size, which should translate to 16 pixels via the root
+/// em size.
+///
+$font-size--base: 1rem;
 
-// =============================================================================
-// Responsive Breakpoints
-// =============================================================================
-$width-small  : 400px;
-$width-medium : 840px;
-$width-large  : 1280px;
+///
+/// The width of a single column, sans gutter.
+///
+$grid--column-width: 60px;
 
-// =============================================================================
-// Project-Specific Variables
-// =============================================================================
-$border-sides       : 1px solid #ddd;
-$width-floating     : 440px;
-$height-input-boxes : 40px;
-$color-background   : rgba(0,0,0,.5);
+///
+/// The width of a single gutter, which is a third of a column, or 20 pixels.
+///
+$grid--gutter-width: ($grid--column-width / 3);
+
+///
+/// A grid unit is the addition of a column and a gutter. In this case, a grid
+/// unit is 80 pixels.
+///
+$grid--unit: ($grid--column-width + $grid--gutter-width);
+
+///
+/// Set the leading of the grid to the line-height of the Muli font — 22 pixels.
+///
+$grid--leading: 22px;
+
+///
+/// The phone breakpoint is 5 grid units, or 400 pixels.
+///
+$width--phone-breakpoint:   (5 * $grid--unit);
+
+///
+/// The tablet breakpoint is 9 grid units, or 720 pixels.
+///
+$width--tablet-breakpoint:  (9 * $grid--unit);
+
+///
+/// The desktop breakpoint is 12 grid units, or 960 pixels.
+///
+$width--desktop-breakpoint: (12 * $grid--unit);
