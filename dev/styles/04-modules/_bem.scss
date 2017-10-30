@@ -46,6 +46,10 @@
    }
 
    &__heading {
+      @include desktop-based-css {
+         font-size: $font-size--large;
+      }
+
       margin-left: $grid--gutter-width;
       line-height: $height--desktop-nav;
 
@@ -55,6 +59,11 @@
    }
 
    &__nav {
+      @include desktop-based-css {
+         margin-left: ($grid--gutter-width / 2);
+         width: (6 * $grid--unit);
+      }
+
       margin-left: (2 * $grid--gutter-width);
       width: (8 * $grid--unit);
 
@@ -69,6 +78,10 @@
          font-size: $font-size--large;
 
          a {
+            @include desktop-based-css {
+               font-size: $font-size--base;
+            }
+
             display: block;
             width: 100%;
             height: 100%;
