@@ -73,3 +73,9 @@ $height--desktop-nav: (3.875 * $grid--leading);
 /// The color of the column in the logo.
 ///
 $color--logo-column: rgb(241, 122, 172);
+
+///
+/// A variant of the baseline/leading color used in the grid and the logo, this
+/// variable establishes the color of the text in the navigation links.
+///
+$color--nav-link-text: rgb(5, 87, 118);
