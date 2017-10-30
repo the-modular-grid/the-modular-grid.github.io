@@ -9,6 +9,11 @@
 $font-size--base: 1rem;
 
 ///
+/// Large reading text is usually defined as 18.66px. I’m defining it as 18px.
+///
+$font-size--large: (1.125 * $font-size--base);
+
+///
 /// The weight 300 maps to light in the Muli font.
 ///
 $font-weight--light: 300;
