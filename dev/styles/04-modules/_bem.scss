@@ -52,10 +52,14 @@
 
    &__nav {
       margin-left: (2 * $grid--gutter-width);
+      width: (8 * $grid--unit);
+
+      ul {
+         display: flex;
+      }
 
       li {
-         display: inline-block;
-         width: (2 * $grid--unit);
+         flex-grow: 1;
          text-align: center;
          line-height: $height--desktop-nav;
          font-size: (1.125 * $font-size--base);
