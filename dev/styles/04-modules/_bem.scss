@@ -48,6 +48,10 @@
    &__heading {
       margin-left: $grid--gutter-width;
       line-height: $height--desktop-nav;
+
+      a {
+         color: $color--logo-column;
+      }
    }
 
    &__nav {
