@@ -8,5 +8,6 @@ a {
 
    &:hover {
       background-color: $color--logo-column;
+      color: $color--nav-link-text--hover;
    }
 }
