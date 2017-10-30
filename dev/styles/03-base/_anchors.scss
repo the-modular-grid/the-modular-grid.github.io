@@ -1,0 +1,7 @@
+a {
+   text-decoration: none;
+
+   &:hover {
+      background-color: $color--logo-column;
+   }
+}
