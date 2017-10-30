@@ -63,3 +63,9 @@ $width--tablet-breakpoint:  (9 * $grid--unit);
 /// The desktop breakpoint is 12 grid units, or 960 pixels.
 ///
 $width--desktop-breakpoint: (12 * $grid--unit);
+
+///
+/// Height of desktop nav.
+///
+$height--desktop-nav: (3.875 * $grid--leading);
+
