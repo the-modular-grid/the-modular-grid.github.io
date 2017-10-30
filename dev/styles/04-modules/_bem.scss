@@ -51,7 +51,7 @@
    }
 
    &__nav {
-      margin-left: (($grid--column-width / 2) + $grid--gutter-width);
+      margin-left: (2 * $grid--gutter-width);
 
       li {
          display: inline-block;
