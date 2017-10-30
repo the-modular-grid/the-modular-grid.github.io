@@ -28,8 +28,44 @@
          width: $width--tablet-breakpoint;
       }
 
+      display: flex;
       margin: auto;
       max-width: $width--desktop-breakpoint;
+   }
+
+   &__link {
+      line-height: $height--desktop-nav;
+
+      &:hover {
+         background-color: transparent;
+      }
+   }
+
+   &__logo {
+      vertical-align: middle;
+   }
+
+   &__heading {
+      margin-left: $grid--gutter-width;
+      line-height: $height--desktop-nav;
+   }
+
+   &__nav {
+      margin-left: (($grid--column-width / 2) + $grid--gutter-width);
+
+      li {
+         display: inline-block;
+         width: (2 * $grid--unit);
+         text-align: center;
+         line-height: $height--desktop-nav;
+         font-size: (1.125 * $font-size--base);
+
+         a {
+            display: block;
+            width: 100%;
+            height: 100%;
+         }
+      }
    }
 }
 
