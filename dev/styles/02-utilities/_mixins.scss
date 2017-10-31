@@ -31,7 +31,7 @@
 ///    }
 ///
 @mixin tablet-based-css {
-   @media (min-width: #{($width--phone-breakpoint) + ($grid--gutter-width)}) and (max-width: #{($width--tablet-breakpoint + ($grid--gutter-width)) - 1}) {
+   @media (max-width: #{($width--tablet-breakpoint + ($grid--gutter-width)) - 1}) {
       @content;
    }
 }
