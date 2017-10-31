@@ -9,11 +9,11 @@
 /// @author Roy Vanegas
 ///
 /// @example
-///    @include tablet-based-css {
+///    @include mobile-based-css {
 ///       width: $width--phone-breakpoint;
 ///    }
 ///
-@mixin tablet-based-css {
+@mixin mobile-based-css {
    @media (max-width: #{($width--tablet-breakpoint + ($grid--gutter-width)) - 1}) {
       @content;
    }

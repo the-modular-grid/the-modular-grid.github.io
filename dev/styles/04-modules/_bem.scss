@@ -16,7 +16,7 @@
 
 .header {
    &__container {
-      @include tablet-based-css {
+      @include mobile-based-css {
          display: block;
          width: auto;
       }
@@ -31,7 +31,7 @@
    }
 
    &__link {
-      @include tablet-based-css {
+      @include mobile-based-css {
          line-height: 48px;
       }
 
@@ -43,7 +43,7 @@
    }
 
    &__logo {
-      @include tablet-based-css {
+      @include mobile-based-css {
          display: none;
       }
 
@@ -51,7 +51,7 @@
    }
 
    &__heading {
-      @include tablet-based-css {
+      @include mobile-based-css {
          display: block;
          margin-left: 0;
          padding-top: 8px;
@@ -72,7 +72,7 @@
    }
 
    &__nav {
-      @include tablet-based-css {
+      @include mobile-based-css {
          margin-left: 0;
          width: auto;
       }
@@ -86,7 +86,7 @@
       width: (8 * $grid--unit);
 
       ul {
-         @include tablet-based-css {
+         @include mobile-based-css {
             flex-direction: column;
          }
 
@@ -94,7 +94,7 @@
       }
 
       li {
-         @include tablet-based-css {
+         @include mobile-based-css {
             line-height: 48px;
          }
 
@@ -118,7 +118,7 @@
 
 .main {
    &__container {
-      @include tablet-based-css {
+      @include mobile-based-css {
          width: $width--phone-breakpoint;
       }
 
@@ -133,7 +133,7 @@
 
 .footer {
    &__container {
-      @include tablet-based-css {
+      @include mobile-based-css {
          width: $width--phone-breakpoint;
       }
 
