@@ -90,6 +90,10 @@
       width: (8 * $grid--unit);
 
       ul {
+         @include tablet-based-css {
+            flex-direction: column;
+         }
+
          display: flex;
       }
 
