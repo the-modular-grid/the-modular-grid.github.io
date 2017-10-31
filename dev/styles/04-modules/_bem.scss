@@ -43,6 +43,10 @@
    }
 
    &__logo {
+      @include tablet-based-css {
+         display: none;
+      }
+
       vertical-align: middle;
    }
 
