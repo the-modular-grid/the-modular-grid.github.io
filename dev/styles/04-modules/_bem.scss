@@ -16,10 +16,6 @@
 
 .header {
    &__container {
-      @include phone-based-css {
-         max-width: $width--phone-breakpoint;
-      }
-
       @include tablet-based-css {
          display: block;
          width: auto;
@@ -122,10 +118,6 @@
 
 .main {
    &__container {
-      @include phone-based-css {
-         max-width: $width--phone-breakpoint;
-      }
-
       @include tablet-based-css {
          width: $width--phone-breakpoint;
       }
@@ -141,10 +133,6 @@
 
 .footer {
    &__container {
-      @include phone-based-css {
-         max-width: $width--phone-breakpoint;
-      }
-
       @include tablet-based-css {
          width: $width--phone-breakpoint;
       }

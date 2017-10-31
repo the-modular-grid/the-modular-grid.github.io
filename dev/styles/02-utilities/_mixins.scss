@@ -3,23 +3,6 @@
 ////
 
 ///
-/// Use <code>419px</code> as the maximum width breakpoint for the phone.
-///
-/// @access public
-/// @author Roy Vanegas
-///
-/// @example
-///    @include phone-based-css {
-///       max-width: $width--phone-breakpoint;
-///    }
-///
-@mixin phone-based-css {
-   @media (max-width: #{($width--phone-breakpoint + ($grid--gutter-width)) - 1}) {
-      @content;
-   }
-}
-
-///
 /// Set the bounds of a tablet between <code>420px</code> and <code>739px</code>.
 ///
 /// @access public
