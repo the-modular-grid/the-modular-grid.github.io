@@ -35,6 +35,10 @@
    }
 
    &__link {
+      @include tablet-based-css {
+         line-height: 48px;
+      }
+
       line-height: $height--desktop-nav;
 
       &:hover {
@@ -51,6 +55,14 @@
    }
 
    &__heading {
+      @include tablet-based-css {
+         display: block;
+         margin-left: 0;
+         padding-top: 8px;
+         text-align: center;
+         line-height: 1;
+      }
+
       @include desktop-based-css {
          font-size: $font-size--large;
       }
