@@ -21,7 +21,8 @@
       }
 
       @include tablet-based-css {
-         width: $width--phone-breakpoint;
+         display: block;
+         width: auto;
       }
 
       @include desktop-based-css {
