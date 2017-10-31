@@ -1,0 +1,14 @@
+a {
+   transition: 150ms;
+   text-decoration: none;
+
+   &:link,
+   &:visited {
+      color: $color--nav-link-text;
+   }
+
+   &:hover {
+      background-color: $color--logo-column;
+      color: $color--nav-link-text--hover;
+   }
+}

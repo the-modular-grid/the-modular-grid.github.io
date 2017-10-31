@@ -1,0 +1,147 @@
+////
+/// Add poster comment here
+////
+.layout-block {
+   margin: auto;
+
+   &.header {
+   }
+
+   &.main {
+   }
+
+   &.footer {
+   }
+}
+
+.header {
+   &__container {
+      @include mobile-based-css {
+         display: block;
+         width: auto;
+      }
+
+      @include desktop-based-css {
+         width: $width--tablet-breakpoint;
+      }
+
+      display: flex;
+      margin: auto;
+      max-width: $width--desktop-breakpoint;
+   }
+
+   &__link {
+      @include mobile-based-css {
+         line-height: 48px;
+      }
+
+      line-height: $height--desktop-nav;
+
+      &:hover {
+         background-color: transparent;
+      }
+   }
+
+   &__logo {
+      @include mobile-based-css {
+         display: none;
+      }
+
+      vertical-align: middle;
+   }
+
+   &__heading {
+      @include mobile-based-css {
+         display: block;
+         margin-left: 0;
+         padding-top: 24px;
+         text-align: center;
+         line-height: 1;
+      }
+
+      @include desktop-based-css {
+         font-size: $font-size--large;
+      }
+
+      margin-left: $grid--gutter-width;
+      line-height: $height--desktop-nav;
+
+      a {
+         color: $color--logo-column;
+      }
+   }
+
+   &__nav {
+      @include mobile-based-css {
+         margin-left: 0;
+         width: auto;
+      }
+
+      @include desktop-based-css {
+         margin-left: ($grid--gutter-width / 2);
+         width: (6 * $grid--unit);
+      }
+
+      margin-left: (2 * $grid--gutter-width);
+      width: (8 * $grid--unit);
+
+      ul {
+         @include mobile-based-css {
+            flex-direction: column;
+         }
+
+         display: flex;
+      }
+
+      li {
+         @include mobile-based-css {
+            line-height: 72px;
+         }
+
+         flex-grow: 1;
+         text-align: center;
+         line-height: $height--desktop-nav;
+         font-size: $font-size--large;
+
+         a {
+            @include desktop-based-css {
+               font-size: $font-size--base;
+            }
+
+            display: block;
+            width: 100%;
+            height: 100%;
+         }
+      }
+   }
+}
+
+.main {
+   &__container {
+      @include mobile-based-css {
+         width: $width--phone-breakpoint;
+      }
+
+      @include desktop-based-css {
+         width: $width--tablet-breakpoint;
+      }
+
+      margin: auto;
+      max-width: $width--desktop-breakpoint;
+   }
+}
+
+.footer {
+   &__container {
+      @include mobile-based-css {
+         width: $width--phone-breakpoint;
+      }
+
+      @include desktop-based-css {
+         width: $width--tablet-breakpoint;
+      }
+
+      margin: auto;
+      max-width: $width--desktop-breakpoint;
+   }
+}
