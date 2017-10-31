@@ -76,6 +76,11 @@
    }
 
    &__nav {
+      @include tablet-based-css {
+         margin-left: 0;
+         width: auto;
+      }
+
       @include desktop-based-css {
          margin-left: ($grid--gutter-width / 2);
          width: (6 * $grid--unit);
