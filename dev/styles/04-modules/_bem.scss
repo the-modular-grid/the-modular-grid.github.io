@@ -98,6 +98,10 @@
       }
 
       li {
+         @include tablet-based-css {
+            line-height: 48px;
+         }
+
          flex-grow: 1;
          text-align: center;
          line-height: $height--desktop-nav;
