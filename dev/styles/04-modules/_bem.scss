@@ -33,7 +33,7 @@
 
    &__link {
       @include mobile-based-css {
-         line-height: 48px;
+         line-height: 48px; // TODO: Use grid leading variable
       }
 
       line-height: $height--desktop-nav;
@@ -55,7 +55,7 @@
       @include mobile-based-css {
          display: block;
          margin-left: 0;
-         padding-top: 24px;
+         padding-top: 24px; // TODO: Use grid leading variable
          text-align: center;
          line-height: 1;
       }
@@ -96,7 +96,7 @@
 
       li {
          @include mobile-based-css {
-            line-height: 72px;
+            line-height: 72px; // TODO: Use grid leading variable
          }
 
          flex-grow: 1;
