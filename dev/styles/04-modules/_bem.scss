@@ -152,6 +152,10 @@
 
          li {
             flex-grow: 1;
+            padding: {
+               top: (1.45 * $grid--leading);
+               bottom: (1.45 * $grid--leading);
+            }
             text-align: center;
          }
       }
