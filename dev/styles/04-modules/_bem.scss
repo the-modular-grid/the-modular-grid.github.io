@@ -159,5 +159,11 @@
             text-align: center;
          }
       }
+
+      &--link {
+         &:hover {
+            background-color: transparent;
+         }
+      }
    }
 }
