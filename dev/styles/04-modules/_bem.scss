@@ -149,6 +149,10 @@
    &__nav {
       ul {
          display: flex;
+
+         li {
+            flex-grow: 1;
+         }
       }
    }
 }
