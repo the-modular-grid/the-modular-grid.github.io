@@ -148,6 +148,10 @@
 
    &__nav {
       ul {
+         @include phone-based-css {
+            display: block;
+         }
+
          display: flex;
 
          li {
