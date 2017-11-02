@@ -95,7 +95,7 @@
 
       li {
          @include mobile-based-css {
-            line-height: 72px; // TODO: Use grid leading variable
+            line-height: (3.275 * $grid--leading);
          }
 
          flex-grow: 1;
