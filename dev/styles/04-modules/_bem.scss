@@ -33,7 +33,7 @@
 
    &__link {
       @include mobile-based-css {
-         line-height: 48px; // TODO: Use grid leading variable
+         line-height: (2.18 * $grid--leading);
       }
 
       line-height: $height--desktop-nav;
