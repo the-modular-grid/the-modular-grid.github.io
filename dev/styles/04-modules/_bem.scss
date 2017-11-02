@@ -155,11 +155,10 @@
 
          li {
             flex-grow: 1;
-            padding: {
-               top: (1.45 * $grid--leading);
-               bottom: (1.45 * $grid--leading);
             }
             text-align: center;
+            line-height: (3.275 * $grid--leading);
+
             &:nth-child(2) {
                @include mobile-based-css {
                   display: none;
