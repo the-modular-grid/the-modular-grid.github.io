@@ -55,7 +55,7 @@
       @include mobile-based-css {
          display: block;
          margin-left: 0;
-         padding-top: 24px; // TODO: Use grid leading variable
+         padding-top: (1.1 * $grid--leading);
          text-align: center;
          line-height: 1;
       }
