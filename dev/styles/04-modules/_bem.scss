@@ -161,6 +161,11 @@
                bottom: (1.45 * $grid--leading);
             }
             text-align: center;
+            &:nth-child(2) {
+               @include mobile-based-css {
+                  display: none;
+               }
+            }
          }
       }
 
