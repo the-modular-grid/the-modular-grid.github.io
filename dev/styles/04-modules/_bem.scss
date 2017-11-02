@@ -135,7 +135,7 @@
 .footer {
    &__container {
       @include mobile-based-css {
-         width: $width--phone-breakpoint;
+         width: auto;
       }
 
       @include desktop-based-css {
