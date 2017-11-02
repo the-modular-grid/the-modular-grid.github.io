@@ -154,8 +154,10 @@
          display: flex;
 
          li {
-            flex-grow: 1;
             }
+
+            display: block;
+            flex-grow: 1;
             text-align: center;
             line-height: (3.275 * $grid--leading);
 
