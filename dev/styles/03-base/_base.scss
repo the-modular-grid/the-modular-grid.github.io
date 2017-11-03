@@ -1,3 +1,26 @@
 html {
    font-size: $font-size--base;
 }
+
+body {
+   font: $font-weight--light #{1.1 * $font-size--base} / 1.6 $font-families--prime;
+}
+
+h1 {
+   font: $font-weight--bold #{(1.5 * $font-size--base)} / #{1} $font-families--prime;
+}
+
+a {
+   transition: 150ms;
+   text-decoration: none;
+
+   &:link,
+   &:visited {
+      color: $color--nav-link-text;
+   }
+
+   &:hover {
+      background-color: $color--logo-column;
+      color: $color--nav-link-text--hover;
+   }
+}
