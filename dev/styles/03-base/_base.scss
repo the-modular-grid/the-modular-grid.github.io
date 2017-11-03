@@ -46,3 +46,7 @@ a {
       color: $color--nav-link-text--hover;
    }
 }
+
+img {
+   color: darken($color--logo-column, 15%);
+}
