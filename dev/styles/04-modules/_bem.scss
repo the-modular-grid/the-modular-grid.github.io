@@ -116,21 +116,6 @@
    }
 }
 
-.main {
-   &__container {
-      @include mobile-based-css {
-         width: $width--phone-breakpoint;
-      }
-
-      @include desktop-based-css {
-         width: $width--tablet-breakpoint;
-      }
-
-      margin: auto;
-      max-width: $width--desktop-breakpoint;
-   }
-}
-
 .footer {
    &__container {
       @include mobile-based-css {
