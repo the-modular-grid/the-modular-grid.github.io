@@ -10,14 +10,11 @@
 
 section {
    padding: 48px 0;
-}
 
-section:first-of-type {
-   margin-top: 4px;
-}
+   &:first-of-type {
+      margin-top: 4px;
+   }
 
-
-section {
    &:nth-child(odd) {
       background-color: lighten($color--nav-link-text, 74%);
    }
