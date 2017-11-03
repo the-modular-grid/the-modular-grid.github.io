@@ -50,3 +50,9 @@ a {
 img {
    color: darken($color--logo-column, 15%);
 }
+
+picture {
+   img {
+      max-width: 100%;
+   }
+}
