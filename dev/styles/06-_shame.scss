@@ -7,32 +7,3 @@
 /// be marked with a TODO in a clean codebase. All the syntax in this file should
 /// eventually be placed in the correct partial.
 ///
-
-section {
-   padding: 48px 0;
-
-   &:first-of-type {
-      margin-top: 4px;
-   }
-
-   &:nth-child(odd) {
-      background-color: lighten($color--nav-link-text, 74%);
-   }
-
-   &:nth-child(even) {
-      background-color: lighten($color--logo-column, 25%);
-   }
-
-   > div {
-      @include mobile-based-css {
-         width: $width--phone-breakpoint;
-      }
-
-      @include desktop-based-css {
-         width: $width--tablet-breakpoint;
-      }
-
-      margin: auto;
-      max-width: $width--desktop-breakpoint;
-   }
-}
