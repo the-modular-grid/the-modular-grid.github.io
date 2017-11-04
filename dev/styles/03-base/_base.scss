@@ -74,7 +74,7 @@ section {
 
    > div {
       @include mobile-based-css {
-         width: $width--phone-breakpoint;
+         max-width: $width--phone-breakpoint;
       }
 
       @include desktop-based-css {
