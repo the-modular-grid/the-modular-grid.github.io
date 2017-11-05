@@ -5,6 +5,9 @@
    margin: auto;
 
    &.main {
+      ul {
+         list-style-type: disc;
+      }
    }
 
    &.footer {
