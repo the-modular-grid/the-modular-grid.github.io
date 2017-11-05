@@ -8,6 +8,15 @@
       ul {
          list-style-type: disc;
       }
+
+      a:not(.no-border) {
+         transition: 350ms;
+         border-bottom: 2px solid lighten($color--nav-link-text, 54%);
+
+         &:hover {
+            border-color: transparent;
+         }
+      }
    }
 
    &.footer {
