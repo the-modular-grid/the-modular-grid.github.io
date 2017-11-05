@@ -61,7 +61,7 @@ picture {
 }
 
 section {
-   padding: 48px 0;
+   padding: #{(2 * $grid--leading)} 0 #{((2 * $grid--leading) + 6)};
 
    &:nth-child(odd) {
       background-color: lighten($color--nav-link-text, 74%);
