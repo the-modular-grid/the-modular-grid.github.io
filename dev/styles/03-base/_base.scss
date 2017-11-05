@@ -3,7 +3,7 @@ html {
 }
 
 body {
-   color: #055776;
+   color: $color--nav-link-text;
    font: $font-weight--light #{1.1 * $font-size--base} / 1.6 $font-families--prime;
 }
 
