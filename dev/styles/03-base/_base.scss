@@ -60,10 +60,6 @@ picture {
 section {
    padding: 48px 0;
 
-   &:first-of-type {
-      margin-top: 4px;
-   }
-
    &:nth-child(odd) {
       background-color: lighten($color--nav-link-text, 74%);
    }
