@@ -84,3 +84,13 @@ section {
       max-width: $width--desktop-breakpoint;
    }
 }
+
+i,
+em {
+   font-style: italic;
+}
+
+b,
+strong {
+   font-weight: 700;
+}

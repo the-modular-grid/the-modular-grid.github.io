@@ -177,3 +177,30 @@
       }
    }
 }
+
+#privacy-policy {
+   header {
+      margin: 40px 0;
+   }
+
+   h2 {
+      margin: 16px 0 0;
+   }
+
+   ul {
+      margin: 8px 0;
+   }
+
+   .layout-block {
+      @include mobile-based-css {
+         max-width: $width--phone-breakpoint;
+      }
+
+      @include desktop-based-css {
+         width: $width--tablet-breakpoint;
+      }
+
+      margin: auto;
+      max-width: $width--desktop-breakpoint;
+   }
+}
