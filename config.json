@@ -1,0 +1,7 @@
+{
+  "colors": {
+    "default": "\u001b[39m",
+    "red": "\u001b[31m",
+    "green": "\u001b[32m"
+  }
+}

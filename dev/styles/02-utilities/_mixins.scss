@@ -1,0 +1,53 @@
+////
+/// Site-wide mixins are contained in this file.
+////
+
+/// Use <code>419px</code> as the maximum width breakpoint for the phone.
+///
+/// @access public
+/// @author Roy Vanegas
+///
+/// @example
+///    @include phone-based-css {
+///       max-width: $width--phone-breakpoint;
+///    }
+///
+@mixin phone-based-css {
+   @media (max-width: #{($width--phone-breakpoint + ($grid--gutter-width)) - 1}) {
+      @content;
+   }
+}
+
+///
+/// Set the maximum bound of a mobile device to <code>739px</code>.
+///
+/// @access public
+/// @author Roy Vanegas
+///
+/// @example
+///    @include mobile-based-css {
+///       width: $width--phone-breakpoint;
+///    }
+///
+@mixin mobile-based-css {
+   @media (max-width: #{($width--tablet-breakpoint + ($grid--gutter-width)) - 1}) {
+      @content;
+   }
+}
+
+///
+/// Set the bounds of the desktop between <code>740px</code> and <code>979px</code>.
+///
+/// @access public
+/// @author Roy Vanegas
+///
+/// @example
+///    @include desktop-based-css {
+///       width: $width--tablet-breakpoint;
+///    }
+///
+@mixin desktop-based-css {
+   @media (min-width: #{($width--tablet-breakpoint + ($grid--gutter-width))}) and (max-width: #{($width--desktop-breakpoint + ($grid--gutter-width)) - 1}) {
+      @content;
+   }
+}
